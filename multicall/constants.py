@@ -74,7 +74,8 @@ class Network(IntEnum):
     Aurora = 1313161554
     Harmony = 1666600000
     Mantle = 5000
-    MantleTestnet = 5001
+    MantleTestnet = 5001,
+    opBNBTestnet = 5611
 
 MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.Mainnet: '0xeefBa1e63905eF1D7ACbA5a8513c70307C1cE441',
@@ -93,6 +94,7 @@ MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.Kava: '0x7ED7bBd8C454a1B0D9EdD939c45a81A03c20131C',
     Network.Mantle: '0x7eeFb76E4D201Eb7157c140F39E2992D53F71da7',
     Network.MantleTestnet: '0x7eeFb76E4D201Eb7157c140F39E2992D53F71da7',
+    Network.opBNBTestnet: '0xC355e18e1821d15Fb47cf7c0aa6584878fF55f1C',
 }
 
 MULTICALL2_ADDRESSES: Dict[int,str] = {
@@ -115,6 +117,7 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Kava: '0x45be772faE4a9F31401dfF4738E5DC7DD439aC0b',
     Network.Mantle: '0xd875b6E583cba79183be68E0af7cBad053338C95',
     Network.MantleTestnet: '0xd875b6E583cba79183be68E0af7cBad053338C95',
+    Network.opBNBTestnet: '0xF2a66E86539db7D954507F1326b411C9cBaC31b0',
 }
 
 # based on https://github.com/mds1/multicall#readme
@@ -172,6 +175,7 @@ MULTICALL3_ADDRESSES: Dict[int,str] = {
     Network.Harmony: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.Mantle: '0x4Af866539734dd29E921105fb1EbA521e77e8Eb4',
     Network.MantleTestnet: '0x4Af866539734dd29E921105fb1EbA521e77e8Eb4',
+    Network.opBNBTestnet: '0xfd2325eCED4118c6AFa2F044089385B0A15dE6a8',
 }
 
 # With default AsyncBaseProvider settings, some dense calls will fail
